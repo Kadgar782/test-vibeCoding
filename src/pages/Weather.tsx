@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; // replace with your real key
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 const Weather = () => {
   const [weather, setWeather] = useState<any>(null);
