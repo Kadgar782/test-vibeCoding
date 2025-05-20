@@ -42,7 +42,7 @@ function LoginForm() {
       }
     } catch (err: any) {
       const errorMessage =
-        err.response?.data?.error ||
+        err.response?.data?.error &&
         "Login failed, try using eve.holt@reqres.in or emma.wong@reqres.in in both inputs";
       setError(errorMessage);
     }
